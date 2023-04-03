@@ -1,0 +1,76 @@
+idboard: 640addc1b24eb81f210ab627
+clé: 762f3adc455651b61608d70e17161c0a
+token: ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+Liste des boards:
+https://api.trello.com/1/members/me/boards?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+une Boards:
+https://api.trello.com/1/boards/640addc1b24eb81f210ab627/?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+une Cards:
+https://api.trello.com/1/cards/rCX3s7Oa/?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+avec rCX3s7Oa l'id de la card
+
+une Lists:
+https://api.trello.com/1/boards/640addc1b24eb81f210ab627/?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+liste des Lists:
+https://api.trello.com/1/boards/640addc1b24eb81f210ab627/lists?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+avec 640addc1b24eb81f210ab627 l'id de la board
+
+liste des cards d'une liste:
+https://api.trello.com/1/lists/640addc1b24eb81f210ab630/cards?key=762f3adc455651b61608d70e17161c0a&token=ATTA864a24a3bf7a53ab3926a7131ce70b4c477a96555adc824f38a80728c4e214683E636561
+
+avec 640addc1b24eb81f210ab630 l'id de la liste
+
+
+
+Créer une board:
+curl --request POST \
+  --url 'https://api.trello.com/1/boards/?name={name}&key=APIKey&token=APIToken'
+
+Update une board:
+curl --request PUT \
+  --url 'https://api.trello.com/1/boards/{id}?name={new_name}&key=APIKey&token=APIToken'
+
+Delete une board:
+curl --request DELETE \
+  --url 'https://api.trello.com/1/boards/{id}?key=APIKey&token=APIToken'
+
+
+
+Créer une liste:
+curl --request POST \
+  --url 'https://api.trello.com/1/lists?name={name}&idBoard=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken'
+
+Update une liste:
+curl --request PUT \
+  --url 'https://api.trello.com/1/lists/{id}?name={new_name}&key=APIKey&token=APIToken'
+
+Arciver une liste:
+curl --request PUT \
+  --url 'https://api.trello.com/1/lists/{id}/closed?key=APIKey&token=APIToken'
+
+
+
+Créer une card:
+curl --request POST \
+  --url 'https://api.trello.com/1/cards?name={name}&idList=5abbe4b7ddc1b351ef961414&key=APIKey&token=APIToken' \
+  --header 'Accept: application/json'
+
+Update une card:
+curl --request PUT \
+  --url 'https://api.trello.com/1/cards/{id}?name={new_name}&key=APIKey&token=APIToken' \
+  --header 'Accept: application/json'
+
+Delete une card:
+curl --request DELETE \
+  --url 'https://api.trello.com/1/cards/{id}?key=APIKey&token=APIToken'
+
+
+
+
+JSON to interface: https://app.quicktype.io/?l=ts
+

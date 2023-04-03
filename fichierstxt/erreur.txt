@@ -1,0 +1,22 @@
+Error: src/app/app.module.ts:24:5 - error NG6001: The class 'LoginComponent' is listed in the declarations of the NgModule 'AppModule', but is not a directive, a component, or a pipe. Either remove it from the NgModule's declarations, or add an appropriate Angular decorator.
+
+24     LoginComponent,
+       ~~~~~~~~~~~~~~
+
+  src/app/component/login/login.component.ts:10:14
+    10 export class LoginComponent {
+                    ~~~~~~~~~~~~~~
+    'LoginComponent' is declared here.
+
+
+Error: src/app/component/login/login.component.ts:4:1 - error NG1006: Two incompatible decorators on class
+
+  4 @Component({
+    ~~~~~~~~~~~~
+  5   selector: 'app-login',
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 39
+   
+ 40 }
+    ~

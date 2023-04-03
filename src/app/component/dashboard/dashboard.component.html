@@ -1,0 +1,21 @@
+<div class="dash">
+	<ul>
+		<li *ngFor="let list of lists">
+		<h3>{{ list.name }}
+			<button (click)="suppListe(list.id)">X</button>
+		</h3>
+		<input type="text" [(ngModel)]="nouvelleTache[list.id]" placeholder="Ajouter une tâche...">
+		<button (click)="ajouterTache(list.id)">✓</button>
+		<ul>
+			<li *ngFor="let card of list.cards">
+			{{ card.name }}
+			<button (click)="suppTache(card.id)">X</button>
+			</li>
+		</ul>
+		</li>
+		<input type="text" [(ngModel)]="nouvelleListe" placeholder="Ajouter une liste...">
+		<button (click)="ajouterListe()">✓</button>
+		<button type="button" class="btn btn-warning text-center" (click)="Logout()">Logout</button>
+
+	</ul>
+</div>

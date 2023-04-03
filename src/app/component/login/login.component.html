@@ -1,0 +1,38 @@
+<div class="loginacceuil">
+    <div class="container-fluid">
+        <div class="row mt -5">
+            <div class="col"></div>
+            <div class="col -4">
+                <div class="card-shadow">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <div id="text-dark text-muted"><h1> Login </h1></div>
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                            </div>
+                            <div class="btn-container">
+                                <button type="button" class="btn btn-info" (click)="login()">Login</button>
+                            </div>
+                            <div class="row"></div>
+                                <div class="col-md-6">
+                                    <a href="/register" style= "text-decoration: none;">Register Here <span class="text-danger"></span></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="/forgot-password" class="text-dark" style= "text-decoration: none;">Forgot password ? </a>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col "></div>
+                
+        </div>
+    </div>
+</div>

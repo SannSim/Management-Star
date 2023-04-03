@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "management-star": {
+      "hosting": {
+        "ManagementStar": [
+          "management-star"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "management-star"
+  }
+}

@@ -1,0 +1,11 @@
+<div class="board">
+    <ul *ngIf="boards.length!=0">
+      <li *ngFor="let board of boards" [routerLink]="[board.id]">{{board.name}}
+        <button (click)="suppBoard(board.id, $event)">X</button>
+      </li>
+      <input type="text" [(ngModel)]="nouveauBoard" placeholder="Ajouter un tableau...">
+      <button (click)="ajouterBoard()">✓</button>
+      <button type="button" class="btn btn-warning text-center" (click)="Logout()">Logout</button>
+    </ul>
+  </div>
+  

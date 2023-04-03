@@ -1,0 +1,134 @@
+/* Style pour le conteneur principal */
+.dash {
+  background-image: url("/assets/galaxy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Style pour le corps de la page */
+body {
+  margin: none;
+}
+
+/* Style pour les listes et les cartes */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+li h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+}
+
+li input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #eee;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+li input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: #1abc9c;
+}
+
+li button {
+  background-color: #1abc9c;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+li button:hover {
+  background-color: #1abc9c;
+}
+
+li ul {
+  padding-left: 20px;
+}
+
+li li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+li button:last-of-type {
+  margin-left: 10px;
+  background-color: #e90a0a;
+}
+
+li button:last-of-type:hover {
+  background-color: #c0392b;
+}
+
+/* Style pour le formulaire d'ajout de liste */
+ul:last-child {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul:last-child input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #1abc9c;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+ul:last-child input[type="text"]:focus {
+  outline: none;
+  border-bottom-color: #1abc9c;
+}
+
+ ul:last-child button {
+    background-color: #1abc9c;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border: none;   
+    color: #000000;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  ul:last-child button:hover {
+    background-color: #0ea1f7;
+  }
+  
+  ul:last-child button:active {
+    transform: translateY(2px);
+  }
+
+
